@@ -21,3 +21,27 @@ const person: {
     console.log(this.balance + tk);
   },
 };
+// spread operator
+const myFriends = ["mithun"];
+const newFriends = ["rabbi"];
+myFriends.push(...newFriends);
+console.log(myFriends);
+//npx ts-node-dev src/function.ts
+
+// rest operator
+const allFriends = (...friends: string[]) =>
+  friends.forEach((friend: string) => console.log(friend));
+allFriends("atiq", "emon");
+
+// array & object destructuring
+const [bestFriend] = myFriends;
+console.log(bestFriend);
+const person2: {
+  name: string;
+  age: number;
+} = {
+  name: "Bipul",
+  age: 27,
+};
+const { name: myname } = person2;
+console.log("my name is--->", myname);
