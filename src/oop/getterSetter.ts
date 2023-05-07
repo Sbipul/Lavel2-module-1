@@ -17,12 +17,15 @@ class Idcard {
     this._nationality = _nationality;
     this.mark = mark;
   }
+  set updateNationality(newNation: boolean) {
+    this._nationality = newNation;
+  }
   get nationality(): boolean {
     return this._nationality;
   }
   getDetails() {
     console.log(
-      `my name is ${this.name} and my id is ${this._id} and i live in ${this.address}`
+      `my name is ${this.name} and my id is ${this._id} and i live in ${this.address} and my nationality is ${this._nationality}`
     );
   }
   addMark(marks: number): number {
@@ -32,4 +35,5 @@ class Idcard {
 
 const myid = new Idcard("Bipul chandro roy", 2301028001, "Dhaka", true, 50);
 console.log(myid.addMark(5));
-console.log(myid.nationality);
+myid.updateNationality = false;
+myid.getDetails();
