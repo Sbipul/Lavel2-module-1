@@ -7,4 +7,6 @@ class Human {
     return `this person sleep ${hour} hour`;
   }
 }
-class Student extends Human {}
+// class Student extends Human {
+
+// }
