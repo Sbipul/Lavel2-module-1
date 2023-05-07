@@ -1,7 +1,7 @@
-function add(num1: number, num2: number): number {
+function add2(num1: number, num2: number): number {
   return num1 + num2;
 }
-const result = add(5, 8);
+const result = add2(5, 8);
 const addNum = (num1: number, num2: number): number => num1 + num2;
 console.log(result, addNum);
 const arrNum: number[] = [1, 4, 5, 8, 6, 8];

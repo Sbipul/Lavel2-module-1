@@ -1,8 +1,8 @@
 "use strict";
-function add(num1, num2) {
+function add2(num1, num2) {
     return num1 + num2;
 }
-const result = add(5, 8);
+const result = add2(5, 8);
 const addNum = (num1, num2) => num1 + num2;
 console.log(result, addNum);
 const arrNum = [1, 4, 5, 8, 6, 8];
